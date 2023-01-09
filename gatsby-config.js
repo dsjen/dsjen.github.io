@@ -1,11 +1,11 @@
 module.exports = {
-  pathPrefix: `/~dsjen`,
+  pathPrefix: `/`,
   siteMetadata: {
     title: `Dennis Jen`,
     description: `I'm a software engineer with a specialization in visualization.
     Currently I'm a lead developer at the MIT Media Lab, and most recently
     I've held positions at edX, Novartis, and Bluefin Labs.`,
-    author: `@dsjen`
+    author: `@dsjen`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,8 +14,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -28,11 +28,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/dj.png` // This path is relative to the root of the site.
-      }
-    }
+        icon: `src/images/dj.png`, // This path is relative to the root of the site.
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ]
+  ],
 };
